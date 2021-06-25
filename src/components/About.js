@@ -1,5 +1,7 @@
 import React from 'react'; 
 import { StarIcon } from '@heroicons/react/solid';
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin,faInstagram,faGithub,faFacebook} from '@fortawesome/free-brands-svg-icons';
 const About = () => {
     return (
 		<div>
@@ -17,10 +19,25 @@ const About = () => {
 								<StarIcon className='w-6 inline-block' />
 								Codechef| 5
 								<StarIcon className='w-6 inline-block' />
-
-								Hackerrank|   Web Developer|Competitive Programmer
+								Hackerrank| Web Developer| Competitive Programmer
 							</p>
 						</b>
+						<div className='social-container mb-4'>
+							<a
+								href='https://www.linkedin.com/in/shreyash-yewale-11a341166/'
+								className='lindedin social ml-4'>
+								<FontAwesomeIcon icon={faLinkedin} size='2x' />
+							</a>
+							<a href='https://github.com/ShreyashYewale' className='github social ml-4'>
+								<FontAwesomeIcon icon={faGithub} size='2x' />
+							</a>
+							<a href='https://www.instagram.com/yewaleshreyash/' className='lindedin social ml-4'>
+								<FontAwesomeIcon icon={faInstagram} size='2x' />
+							</a>
+							<a href='https://www.facebook.com/shreyas.yewale.5' className='lindedin social ml-4'>
+								<FontAwesomeIcon icon={faFacebook} size='2x' />
+							</a>
+						</div>
 						<div className='flex justify-center'>
 							<a
 								href='#contact'
@@ -34,7 +51,7 @@ const About = () => {
 							</a>
 						</div>
 					</div>
-					<div className='sm:max-w-sm sm:w-full md:w-5/2 w-1/2'>
+					<div className='sm:max-w-sm sm:w-full md:w-5/2 w-5/2'>
 						<img className='object-cover object-center rounded' alt='hero' src='./profile.png' />
 					</div>
 				</div>
